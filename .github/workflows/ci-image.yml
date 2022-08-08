@@ -56,7 +56,7 @@ jobs:
       env:
         CTX_GITHUB_EVENT_NAME: ${{ github.event_name }}
         CTX_GITHUB_EVENT_INPUTS_TARGET: ${{ github.event.inputs.target }}
-        IMG_DEPLOY: no
+        IMG_DEPLOY: yes
         IMG_TARGET: all-images
       run: |
         if [[ "${CTX_GITHUB_EVENT_NAME}" = "workflow_dispatch" ]] ; then
